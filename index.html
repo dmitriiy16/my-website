@@ -51,12 +51,22 @@
             margin: 20px auto;
             border-radius: 10px;
         }
-        .content video, .content iframe {
-            width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px 0;
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
             border-radius: 10px;
+            margin: 20px 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
         .button {
             display: inline-block;
@@ -120,16 +130,17 @@
     <main>
         <div class="content">
             <div class="highlight">
-		<p>Уважаемый и любимый гость<p>
-		Воскресным солнечным днём, 14го июля случится масштабный праздник — трёхлетие проекта «Reverse Festival». На культовом пляжном пространстве «Речной» под яркие лучи летнего электронного звучания от больших артистов — произойдёт великое гуляние!
+	<p>Уважаемый и любимый гость<p>		
+Воскресным солнечным днём, 14го июля случится масштабный праздник — трёхлетие проекта «Reverse Festival». На культовом пляжном пространстве «Речной» под яркие лучи летнего электронного звучания от больших артистов — произойдёт великое гуляние!
            </div>
            <img src="https://i.ibb.co/gVw7ttS/Friday-14-July-3-Reverse-1936x1936-1.jpg" alt="Friday-14-July-3-Reverse-1936x1936-1" border="0" /></a>
 
             <p>С 15:00 под электронные мотивы от мастодонтов Российской сцены, пляжный и уютный вайб, фантастические декорации, незабываемые перфомансы случится великий праздник на открытой локации, в самый эпицентр летнего сезона!</p>
             <p>Удивлять и влюблять в волшебное звучание электронного саунда будут:</p>
             <p>CHERTKOVSKI | ANTURAGE | POLA | BOREY | TOMMY VEANUD | MILLERUSHA | ALINA PROX | IVAN SORKIN | POVAR |</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/4pdm8xSMspU?si=kum9sIkVSDICNp1n" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/4pdm8xSMspU?si=kum9sIkVSDICNp1n" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
        <p>Очень ждём вас на этом феноменальном и грандиозном событии, в кругу близких и родных — 14го Июля!</p>
             <p>Прокомод на 20% бонуса: MAIL</p>
        <div class="button-container">
